@@ -1,5 +1,8 @@
 package leetcode.medium;
 
+
+import leetcode.ListNode;
+
 public class Problem2807 {
 
   public ListNode insertGreatestCommonDivisors(ListNode head) {
@@ -22,23 +25,5 @@ public class Problem2807 {
     }
     return gcd(b, a % b);
 
-  }
-
-  public static class ListNode {
-
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-      this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-      this.val = val;
-      this.next = next;
-    }
   }
 }

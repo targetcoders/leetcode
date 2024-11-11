@@ -1,8 +1,9 @@
 package leetcode.medium;
 
-import java.util.ArrayList;
+import static leetcode.ListNode.values;
+
 import java.util.List;
-import leetcode.medium.Problem2807.ListNode;
+import leetcode.ListNode;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -31,15 +32,5 @@ class Problem2807Test {
     List<Integer> result = values(head);
 
     Assertions.assertThat(result).containsExactly(7);
-  }
-
-  private static List<Integer> values(ListNode head) {
-    ListNode h = head;
-    List<Integer> result = new ArrayList<>();
-    while (h != null) {
-      result.add(h.val);
-      h = h.next;
-    }
-    return result;
   }
 }
